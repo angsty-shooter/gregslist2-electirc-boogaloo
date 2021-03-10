@@ -5,7 +5,6 @@
         <h1>Cars</h1>
       </div>
     </div>
-
     <div class="row my-3">
       <form class="form-inline" @submit.prevent="createCar">
         <div class="form-group">

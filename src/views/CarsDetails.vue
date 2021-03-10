@@ -81,9 +81,9 @@
 
 <script>
 import { onMounted, reactive, computed } from 'vue'
-import { onBeforeRouteLeave, useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { carsService } from '../services/CarsService'
-import { AppState } from '../Appstate'
+import { AppState } from '../AppState'
 export default {
   name: 'CarsDetails',
   setup () {
@@ -95,12 +95,7 @@ export default {
     onMounted(() => {
       carsService.getCar(route.params.id)
     })
-    onBeforeRouteLeave((to, from, next) => {
-      if (window.confirm('You sure bro?')) {
-        AppState.activeCar = {}
-        next()
-      }
-    })
+
     return {
       route,
       state,

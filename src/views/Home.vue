@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Greg logo" src="../assets/g.png">
+    <h1>Welcome to Gregslist!</h1>
   </div>
 </template>
 

@@ -85,7 +85,7 @@
 
 <script>
 import { reactive, computed, onMounted } from 'vue'
-import { AppState } from '../Appstate'
+import { AppState } from '../AppState'
 import { carsService } from '../services/CarsService'
 import Car from '../components/Cars.vue'
 import { useRouter } from 'vue-router'

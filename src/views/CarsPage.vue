@@ -106,7 +106,7 @@ export default {
       state,
       async createCar () {
         const carId = await carsService.createCar(state.newCar)
-        router.push({ name: 'CarDetails', params: { id: carId } })
+        router.push({ name: 'CarsDetails', params: { id: carId } })
         state.newCar = {}
       }
     }
@@ -117,6 +117,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
 </style>

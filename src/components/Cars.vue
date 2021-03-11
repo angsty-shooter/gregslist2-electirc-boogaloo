@@ -2,7 +2,7 @@
   <div class="col-4">
     <router-link :to="{name: 'CarsDetails', params: {id: car._id}}">
       <div class="card car">
-        <img class="card-img-top" :src="car.imgUrl" alt="car">
+        <img class="card-img-top img-fluid" :src="car.imgUrl" alt="car">
         <div class="card-body">
           <h4 class="card-title">{{car.make}} | {{car.model}}</h4>
           <p calss="card-text">{{car.year}} | {{car.price}}</p>
@@ -33,6 +33,7 @@ export default {
 }
 .car {
   transition: all .2s;
-  color: black
+  color: black;
+  max-width: 50vw;
 }
 </style>
